@@ -26,6 +26,13 @@ app.use(rateLimit({ windowMs: 15 * 60 * 1000, max: 100 }));
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use((req, res, next) => {
+  res.setHeader(
+    'Content-Security-Policy',
+    "img-src 'self' data: https://art-lunch.ru https://*"
+  );
+  next();
+});
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/recipes', require('./routes/recipes'));
 app.use('/api/users', require('./routes/users'));
@@ -38,6 +45,7 @@ app.use('/api/messenger', messenger);
 app.use('/api/admin', require('./routes/admin'));
 app.use('/api/statistics', require('./routes/statistics')); 
 app.use('/api/admin-stats', require('./routes/adminStats')); 
+
 
 setupSwagger(app);
 
