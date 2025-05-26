@@ -79,7 +79,7 @@ A full-stack web application for managing and sharing cooking recipes with famil
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/grivova/kulinaria.git
    cd kulinar-main
    ```
 
@@ -109,23 +109,13 @@ A full-stack web application for managing and sharing cooking recipes with famil
    npm run dev
    ```
 
-6. Access the application:
-
-   - Frontend: [http://localhost:3000](http://localhost:3000)
-   - Backend API: [http://localhost:5000/api](http://localhost:5000/api)
-
 ### Docker Setup
 
-1. Build and start containers using Docker Compose:
+Build and start containers using Docker Compose:
 
    ```bash
    docker-compose up --build
    ```
-
-2. Access the application:
-
-   - Frontend: [http://localhost](http://localhost)
-   - Backend API: [http://localhost:5000/api](http://localhost:5000/api)
 
 ## API Documentation
 
