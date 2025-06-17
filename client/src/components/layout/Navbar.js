@@ -25,10 +25,10 @@ const Navbar = () => {
   const navLinks = [
     { label: 'Главная', to: '/' },
     { label: 'Рецепты', to: '/recipes' },
+    { label: 'Холодильник', to: '/my-fridge' },
   ];
   const userLinks = [
     { label: 'Мои рецепты', to: '/my-recipes' },
-    { label: 'Холодильник', to: '/my-fridge' },
     { label: 'Профиль', to: '/profile' },
     { label: 'Поиск пользователей', to: '/user-search' },
   ];
