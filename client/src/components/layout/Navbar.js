@@ -24,8 +24,8 @@ const Navbar = () => {
 
   const navLinks = [
     { label: 'Главная', to: '/' },
-    { label: 'Рецепты', to: '/recipes' },
     { label: 'Холодильник', to: '/my-fridge' },
+    { label: 'Рецепты', to: '/recipes' },
   ];
   const userLinks = [
     { label: 'Мои рецепты', to: '/my-recipes' },
