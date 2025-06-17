@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use((req, res, next) => {
   res.setHeader(
     'Content-Security-Policy',
-    "img-src 'self' data: https://art-lunch.ru https://*"
+    "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://art-lunch.ru https://*"
   );
   next();
 });
